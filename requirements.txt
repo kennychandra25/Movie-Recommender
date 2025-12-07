@@ -1,4 +1,5 @@
 streamlit
+pip install --upgrade pip
 pandas
 numpy
 nltk
