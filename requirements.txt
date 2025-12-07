@@ -1,5 +1,5 @@
 streamlit
-pip==25.3
+pip
 pandas
 numpy
 nltk
@@ -7,5 +7,5 @@ scikit-learn
 sentence-transformers
 scipy
 kagglehub
-sklearn
+sckit-learn
 torch --index-url https://download.pytorch.org/whl/cpu
