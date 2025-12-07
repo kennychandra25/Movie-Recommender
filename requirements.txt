@@ -6,4 +6,5 @@ scikit-learn
 sentence-transformers
 scipy
 kagglehub
+sklearn
 torch --index-url https://download.pytorch.org/whl/cpu
