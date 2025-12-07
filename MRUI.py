@@ -60,20 +60,20 @@ html, body, [class*="css"]  {
 # ---------------- LOAD ARTIFACTS ----------------
 @st.cache_data
 def load_df():
-    return pd.read_pickle(r"C:\Users\kenny\OneDrive - purdue.edu\Documents\Kenny's File\Transportation Literature\Data Science Tutorial\Movie Recommendation\tmdb_processed.pkl")
+    return pd.read_pickle("tmdb_processed.pkl")
 
 @st.cache_resource
 def load_tfidf_vectorizer():
-    with open(r"C:\Users\kenny\OneDrive - purdue.edu\Documents\Kenny's File\Transportation Literature\Data Science Tutorial\Movie Recommendation\tfidf_vectorizer.pkl", "rb") as f:
+    with open("tfidf_vectorizer.pkl", "rb") as f:
         return pickle.load(f)
 
 @st.cache_data
 def load_tfidf_matrix():
-    return sparse.load_npz(r"C:\Users\kenny\OneDrive - purdue.edu\Documents\Kenny's File\Transportation Literature\Data Science Tutorial\Movie Recommendation\tfidf_matrix.npz")
+    return sparse.load_npz("tfidf_matrix.npz")
 
 @st.cache_data
 def load_sbert_embeddings():
-    return np.load(r"C:\Users\kenny\OneDrive - purdue.edu\Documents\Kenny's File\Transportation Literature\Data Science Tutorial\Movie Recommendation\sbert.npy")
+    return np.load("sbert.npy")
 
 df = load_df()
 tfidf_vec = load_tfidf_vectorizer()
