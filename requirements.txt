@@ -1,5 +1,5 @@
 streamlit
-pip
+pip==25.3
 pandas
 numpy
 nltk
